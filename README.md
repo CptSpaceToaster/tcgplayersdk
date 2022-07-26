@@ -21,6 +21,7 @@ Consider this example script the only documentation for now :(
 ```python
 if __name__ == '__main__':
     import os
+    import logging
 
     from tcgplayersdk.category_enum import Categories
     from tcgplayersdk.sdk import TCGPlayerSDK
