@@ -1,0 +1,53 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    ".venv/": true,
+    "**/*.pyc": true,
+    "**/.cache": true,
+    "**/__pycache__": true,
+    "pyunit.xml": true,
+    ".pytest_cache": true,
+    "coverage.xml": true,
+    ".coverage": true,
+    "junit_report.xml": true,
+    "htmlcov/": true
+  },
+
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "search.exclude": {
+    ".venv/": true
+  },
+  "editor.rulers": [80, 120],
+  "editor.tabSize": 4,
+
+  "python.defaultInterpreterPath": ".venv/bin/python",
+
+  "python.linting.pylintEnabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.pylintPath": "${workspaceRoot}/.venv/bin/pylint",
+  "python.linting.pylintArgs": [
+    "--rcfile=.pylintrc",
+  ],
+
+  "python.sortImports.path": "${workspaceRoot}/.venv/bin/isort",
+  "python.sortImports.args": [
+    "--settings-path", "${workspaceRoot}/.isort.cfg",
+    "--project", "app",
+    "--project", "tests",
+    "--virtual-env", "${workspaceRoot}/.venv"
+  ],
+
+  "cSpell.words": [
+    "getenv",
+    "gunicorn",
+    "healthcheck"
+  ],
+
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  }
+}

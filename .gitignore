@@ -1,0 +1,19 @@
+# Unit test / coverage reports
+htmlcov/
+.coverage
+coverage.xml
+junit_report.xml
+
+# Project config files
+.install
+dist/
+
+# Project build artifacts
+*.pyc
+*.egg-info
+
+# Cache
+.pytest_cache
+__pycache__
+
+*.DS_store
