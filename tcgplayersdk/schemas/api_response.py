@@ -1,7 +1,6 @@
 from dataclasses import field
 from typing import Generic, TypeVar
 
-import marshmallow
 from marshmallow_dataclass import dataclass
 
 T = TypeVar("T")

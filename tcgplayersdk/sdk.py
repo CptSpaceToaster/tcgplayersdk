@@ -2,17 +2,16 @@ import logging
 from typing import Optional, Type
 
 import requests
-from schemas.category import CategoriesResponse
-from schemas.group import Group, GroupsResponse
-from schemas.identity import Identity
-from schemas.product import ProductsResponse
-from schemas.product_price import ProductPricesResponse
-from schemas.sku_price import SkuPricesResponse
 
 from tcgplayersdk.decorators import require_category
 from tcgplayersdk.exceptions import TCGPlayerSDKException
 from tcgplayersdk.schemas.api_response import APIResponse
-from tcgplayersdk.schemas.product import SkuItem
+from tcgplayersdk.schemas.category import CategoriesResponse
+from tcgplayersdk.schemas.group import Group, GroupsResponse
+from tcgplayersdk.schemas.identity import Identity
+from tcgplayersdk.schemas.product import ProductsResponse, SkuItem
+from tcgplayersdk.schemas.product_price import ProductPricesResponse
+from tcgplayersdk.schemas.sku_price import SkuPricesResponse
 
 TCGPLAYER_BASE_URL = 'https://api.tcgplayer.com'
 TCGPLAYER_API_VERSION = 'v1.39.0'
